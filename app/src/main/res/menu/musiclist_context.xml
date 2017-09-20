@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/setToBell"
+        android:title="设置铃声"/>
+    <item
+        android:id="@+id/addToPlayList"
+        android:title="添加至收藏列表"/>
+</menu>

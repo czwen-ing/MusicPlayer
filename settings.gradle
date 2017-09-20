@@ -1,0 +1,1 @@
+include ':app', ':music', 'Replace_Fragment', ':LyricView', ':AIDLMusicPlayer'

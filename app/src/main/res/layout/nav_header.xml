@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="180dp"
+    android:background="@drawable/ic_nav_bg_drawerlayout"
+    android:fitsSystemWindows="true">
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/nav_icon"
+        android:layout_centerVertical="true"/>
+    <TextView
+        android:id="@+id/nav_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="哈哈二代"
+        android:textSize="20sp"
+        android:textColor="@android:color/white"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="10dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/nav_name"
+        android:background="@drawable/nav_level_bg"
+        android:text="Lv.5"
+        android:textSize="14sp"
+        android:textColor="@android:color/white"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dp"
+        android:textStyle="bold|italic"/>
+</RelativeLayout>

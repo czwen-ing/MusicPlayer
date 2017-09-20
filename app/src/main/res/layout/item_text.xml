@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="12dp">
+
+    <include layout="@layout/user_top"/>
+    <TextView
+        android:id="@+id/text_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:lineSpacingExtra="8dp"
+        android:text="牛B的内容"
+        android:textSize="16sp"
+        android:layout_marginTop="10dp"
+        android:textColor="@android:color/black"/>
+
+    <include layout="@layout/common_bottom" />
+</LinearLayout>

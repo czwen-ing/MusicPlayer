@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activity_music_play"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/content_bg"
+    android:fitsSystemWindows="true">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="5dp"
+        android:fitsSystemWindows="true">
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:clickable="true"
+            android:onClick="back"
+            android:padding="5dp"
+            android:src="@drawable/actionbar_back" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/back"
+            android:orientation="vertical"
+            android:padding="5dp">
+
+            <TextView
+                android:id="@+id/musicplay_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxLines="1"
+                android:text="未知歌名"
+                android:textColor="@android:color/white"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/musicplay_singer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="未知歌手"
+                android:textColor="@android:color/white" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/share"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:clickable="true"
+            android:padding="5dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/actionbar_share" />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/musicplay_image"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_gravity="center"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:src="@drawable/background" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="20dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/currentTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="00:00"
+                android:textColor="@android:color/white"/>
+
+            <SeekBar
+                android:id="@+id/seekbar"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp" />
+
+            <TextView
+                android:id="@+id/totalTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="60:60"
+                android:textColor="@android:color/white"/>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <ImageView
+                android:id="@+id/loop_type"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_centerVertical="true"
+                android:layout_margin="10dp"
+                android:src="@drawable/widget_loop"
+                android:onClick="changePlayType" />
+
+            <ImageView
+                android:id="@+id/music_menu"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="25dp"
+                android:onClick="showMusicListMenu"
+                android:src="@drawable/widget_playlist" />
+
+            <ImageView
+                android:id="@+id/control"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_centerInParent="true"
+                android:onClick="control"
+                android:src="@drawable/widget_play_selector" />
+
+            <ImageView
+                android:id="@+id/previous"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="50dp"
+                android:layout_toLeftOf="@id/control"
+                android:onClick="previous"
+                android:src="@drawable/widget_pre_selector" />
+
+            <ImageView
+                android:id="@+id/next"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="50dp"
+                android:layout_toRightOf="@id/control"
+                android:onClick="next"
+                android:src="@drawable/widget_next_selector" />
+
+        </RelativeLayout>
+    </LinearLayout>
+</FrameLayout>

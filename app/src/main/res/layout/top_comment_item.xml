@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/top_comment"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:paddingBottom="10dp"
+    android:paddingLeft="14dp"
+    android:paddingRight="14dp"
+    android:paddingTop="10dp"
+    android:ellipsize="end"
+    android:lineSpacingExtra="5dp"
+    android:maxLines="3"
+    android:text="用户名: 最新最热的评论最新最热的评论最新最热的评论最新最热的评论"
+    android:textColor="@android:color/black" 
+    android:textSize="12sp"
+    android:background="@color/grayBg"/>

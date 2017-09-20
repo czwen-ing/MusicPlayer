@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="MusicTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:statusBarColor">@android:color/transparent</item>
+    </style>
+
+    <style name="MusicPlayerTheme" parent="AppTheme">
+        <!--<item name="android:statusBarColor">@android:color/transparent</item>-->
+        <item name="android:windowTranslucentStatus">true</item>
+    </style>
+
+    <style name="actionbar_style" parent="Base.TextAppearance.AppCompat.Widget.ActionBar.Title">
+        <item name="android:ellipsize">marquee</item>
+        <item name="android:focusable">true</item>
+        <item name="android:marqueeRepeatLimit">marquee_forever</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:singleLine">true</item>
+    </style>
+</resources>

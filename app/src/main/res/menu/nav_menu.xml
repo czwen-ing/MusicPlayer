@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/nav_home"
+            android:title="Vin" />
+        <item
+            android:id="@+id/nav_friends"
+            android:icon="@drawable/nav_friends"
+            android:title="https://github.com/czwen-ing" />
+        <item
+            android:id="@+id/nav_location"
+            android:icon="@drawable/nav_location"
+            android:title="MadeInChina" />
+        <item
+            android:id="@+id/nav_description"
+            android:icon="@drawable/nav_description"
+            android:title="轻松听，随意听，真好听" />
+        <item
+            android:id="@+id/nav_help"
+            android:icon="@drawable/nav_help"
+            android:title="QQ：458506322" />
+    </group>
+
+</menu>
